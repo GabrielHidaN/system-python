@@ -1,27 +1,23 @@
 import os
 import sys
 
-
-def digit_pass():
-   login = input('Digite a senha de acesso: \n')
 nome_login = ''
-def login_signed():
+def loginFunc():
   password = '0'
-  login = input('Digite a senha de acesso: \n')
-  if  login == password:
-    os.system('cls')
-    nome_login = input('Olá sejá bem vindo! Para facilitar a comunicação  digite  seu nome: \n')
-    os.system('cls')
-    print(f'É um prazer ter você aqui conosco {nome_login}! ')
-  elif login != password:
-      tentativas = 5
-      while tentativas >=1:
-         print(f'Senha errada , você tem mais {tentativas} tentativas.')
-         tentativas = tentativas -1
-         digit_pass()
-      print('Todas suas tentativas foram esgotadas!')
-login_signed()
-
-"""
-tratar do  bug de login 
-"""
+  tentative = 5
+  while tentative >= 1:
+     login = input('Digite a senha de acesso: \n')
+     if login == password:
+         os.system('cls')
+         nome_login = input('Olá sejá bem vindo! Para facilitar acomunicação digite  seu nome: \n')
+         os.system('cls')
+         print(f'É um prazer ter você aqui conosco {nome_login}! ')
+         exit()
+     elif login != password:
+        tentative = tentative -1
+        if tentative >= 2:
+            print(f'Você ainda tem {tentative} tentativas')
+        elif tentative > 0:
+           print(f'você não tem mais {tentative} tentativa!')
+        elif tentative <= 0:
+           print('Não resta mais nenhuma tentativa!')

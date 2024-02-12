@@ -1,6 +1,4 @@
-
 from init import*
 from name_ascii import *
+loginFunc()
 
-login_signed()
-ascii_text()
