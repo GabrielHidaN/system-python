@@ -1,4 +1,5 @@
 from init import*
-from name_ascii import *
-loginFunc()
+from config import*
+from name_ascii import*
 
+loginFunc()

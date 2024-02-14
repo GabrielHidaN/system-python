@@ -1,5 +1,6 @@
 import os
 import sys
+from menu import*
 
 nome_login = ''
 def loginFunc():
@@ -11,8 +12,10 @@ def loginFunc():
          os.system('cls')
          nome_login = input('Olá sejá bem vindo! Para facilitar acomunicação digite  seu nome: \n')
          os.system('cls')
-         print(f'É um prazer ter você aqui conosco {nome_login}! ')
+         print(f' Olá {nome_login}')
+         menu()
          exit()
+
      elif login != password:
         tentative = tentative -1
         if tentative >= 2:
@@ -24,4 +27,3 @@ def loginFunc():
         elif tentative <= 0:
            print('Senha Errada\n')
            print('Não resta mais nenhuma tentativa!')
-
