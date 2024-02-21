@@ -4,7 +4,7 @@ from name_ascii import*
 from init import*
 
 
-def menu():
+def menu_init():
   print('')
   print(paragrafo1)
   print(ASCII_ART_MENU)

@@ -13,7 +13,7 @@ def loginFunc():
          nome_login = input('Olá sejá bem vindo! Para facilitar acomunicação digite  seu nome: \n')
          os.system('cls')
          print(f' Olá {nome_login}')
-         menu()
+         menu_init()
          exit()
 
      elif login != password:
