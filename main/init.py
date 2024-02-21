@@ -17,7 +17,7 @@ def loginFunc():
          exit()
 
      elif login != password:
-        tentative = tentative -1
+        tentative -=1
         if tentative >= 2:
             print('Senha Errada\n')
             print(f'Você ainda tem {tentative} tentativas')
