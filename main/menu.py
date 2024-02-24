@@ -5,6 +5,10 @@ from init import*
 import keyboard
 
 
+
+
+
+
 def menu_init():
   print('')
 
@@ -18,13 +22,32 @@ def menu_init():
 
 
   OPCOES = ['0','1','2','3','4','5']
-  secao1 =' (1)Manipulação de Dados\n (2)Automações\n (3)Games\n (4)IA\n (5)Buscador de Vagas\n (6)...  \n (7)...\n (8)...\n (9)...\n (0)voltar\n'
+  secao1 =' (1)Manipulação de Dados\n (2)Automações\n (3)Games\n (4)IA\n (5)Buscador de Vagas\n (6)...  \n (7)...\n (8)...\n (9)...\n (0)voltar\n (Esc)Sair'
+
 
   print(secao1)
 
   print(ASCII_NAME_HIDANX)
-  secao1 = input()
-  if('0' in OPCOES):
-    print('deu certo')
+
+  INPUT_MENU = str(keyboard.read_key())
+
+  if INPUT_MENU in OPCOES:
+    if INPUT_MENU == '0':
+      ...
+    elif INPUT_MENU == '1':
+      ...
+    elif INPUT_MENU == '2':
+      ...
+    elif INPUT_MENU == '3':
+      ...
+    elif INPUT_MENU == '4':
+      ...
+    elif INPUT_MENU == '5':
+      ...
+  elif INPUT_MENU == 'esc':
+      print('voltei')
+
+  else:
+    print('ele nao esta')
 
 #resolver o keyboard no input

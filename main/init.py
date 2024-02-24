@@ -12,7 +12,7 @@ def loginFunc():
          os.system('cls')
          nome_login = input('Olá sejá bem vindo! Para facilitar acomunicação digite  seu nome: \n')
          os.system('cls')
-         print(f' Olá {nome_login}')
+         print(f' Olá {nome_login.capitalize()}')
          menu_init()
          exit()
 
