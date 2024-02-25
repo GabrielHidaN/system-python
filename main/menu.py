@@ -5,10 +5,6 @@ from init import*
 import keyboard
 
 
-
-
-
-
 def menu_init():
   print('')
 
@@ -22,7 +18,7 @@ def menu_init():
 
 
   OPCOES = ['0','1','2','3','4','5']
-  secao1 =' (1)Manipulação de Dados\n (2)Automações\n (3)Games\n (4)IA\n (5)Buscador de Vagas\n (6)...  \n (7)...\n (8)...\n (9)...\n (0)voltar\n (Esc)Sair'
+  secao1 =' (1)Manipulação de Dados\n (2)Automações\n (3)Games\n (4)IA\n (5)Buscador de Vagas\n (0)ajuda\n (Esc)Sair'
 
 
   print(secao1)
@@ -45,7 +41,7 @@ def menu_init():
     elif INPUT_MENU == '5':
       ...
   elif INPUT_MENU == 'esc':
-      print('voltei')
+      sys.exit("Programa finalizado")
 
   else:
     print('ele nao esta')
