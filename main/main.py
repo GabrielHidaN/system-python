@@ -2,4 +2,9 @@ from init import*
 from config import*
 from name_ascii import*
 
-loginFunc()
+def main():
+  loginFunc()
+  teste = input('ola')
+  print(teste)
+
+main()

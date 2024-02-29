@@ -5,25 +5,34 @@ from init import*
 import keyboard
 
 
-def menu_init():
-  print('')
-
-  print(paragrafo1)
-
-  print(ASCII_ART_MENU)
-
-  print(paragrafo_menu)
-
-  print('')
-
+def MENU_INIT():
 
   OPCOES = ['0','1','2','3','4','5']
-  secao1 =' (1)Manipulação de Dados\n (2)Automações\n (3)Games\n (4)IA\n (5)Buscador de Vagas\n (0)ajuda\n (Esc)Sair'
+  secao1 =f'''
+{paragrafo1}
 
+{ASCII_ART_MENU}
+
+{paragrafo_menu}
+
+  (1)Manipulação de Dados
+
+  (2)Automações
+
+  (3)Games
+
+  (4)IA
+
+  (5)Buscador de Vagas
+
+  (0)ajuda
+
+  (Esc)Sair
+
+{ASCII_NAME_HIDANX}
+  '''
 
   print(secao1)
-
-  print(ASCII_NAME_HIDANX)
 
   INPUT_MENU = str(keyboard.read_key())
 
